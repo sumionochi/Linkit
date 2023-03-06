@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); 
+
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Inter', sans-serif !important;
+    background-color: #E4DDCF;
+    color: rgb(45,50,71);
+}
+
+header figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+header figure a img{
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 0px;
+    width: 7.5rem;
+    box-shadow: 5px 5px 0px #FD8A8A;
+    transition: all 0.3s ease;
+}
+
+header figure img:hover{
+    border-color: #f6f6f6;
+    outline: 1px solid rgb(18,22,27);
+}
+
+header figure .written{
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+    position: absolute;
+    right: 2rem;
+    rotate: 90deg;
+    top: 3.4rem;
+    background: transparent;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+header figure figcaption{
+    margin: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+}
+
+h1{
+    font-size: 1rem;
+    text-align: center;
+    margin: 0.5rem;
+    letter-spacing: 0.6rem;
+    text-transform: capitalize;
+    white-space: nowrap;
+    margin-left: 1rem;
+}
+
+main {
+    line-height: 3rem;
+    border-style: solid;
+    padding: 2rem;
+    border-radius: 0px;
+    box-shadow: 5px 5px 0px #FD8A8A;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+main:hover summary{
+    background-color: #E4DDCF;
+}
+
+main:hover ul{
+    background-color: #E4DDCF;
+}
+
+main:hover{
+    background-color: #E4DDCF;
+}
+
+main ul{
+    list-style: none;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    line-height: 3rem;
+    border-top-style: solid;
+    border-width: 3px;
+    padding: 1rem 2rem;
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer svg{
+    width: 2rem;
+    height: 2rem;
+    transition:  0s ease;
+}
+
+footer svg:hover{
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 10vh 0vw 6.5rem 0vw;
+}
+
+details section{
+    border: solid;
+    border-radius: 0px;
+    padding: 0rem 0rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    animation: myslide;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+
+    box-shadow: 5px 5px 0px rgb(45,50,71);
+}
+
+@keyframes myslide{
+    50%{
+        box-shadow: 5px 5px 0px #FD8A8A;
+    }
+}
+
+li:nth-child(1) span{
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: #f6f6f6;
+
+    animation: myslide1;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myslide1{
+    50%{
+        background-color: rgb(209, 4, 100);
+    }
+}
+
+li:nth-child(2) span{
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: rgb(18,22,27);
+
+    animation: myslide2;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myslide2{
+    50%{
+        background-color: rgb(241,246,253);
+    }
+}
+
+li:nth-child(3) span{
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: rgb(40,99,255);
+
+    animation: myslide3;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myslide3{
+    50%{
+        background-color: #f6f6f6;
+    }
+}
+
+li:nth-child(4) span{
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: rgb(31,34,34);
+
+    animation: myslide4;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myslide4{
+    50%{
+        background-color: rgb(252,170,53);
+    }
+}
+
+li:nth-child(5) span{
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: rgb(255,2,102);
+
+    animation: myslide5;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myslide5{
+    50%{
+        background-color: rgb(226,172,0);
+    }
+}
+
+li:nth-child(6) span{
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: rgb(103,179,236);
+
+    animation: myslide2;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myslide6{
+    50%{
+        background-color: #f6f6f6;
+    }
+}
+
+li:nth-child(7) span{
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: rgb(40,99,255);
+
+    animation: myslide2;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myslide7{
+    50%{
+        background-color: #f6f6f6;
+    }
+}
+
+section a{
+    border-style: none;
+    margin: auto;
+    animation: myslide;
+}
+
+li{
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+footer a{
+    padding: 0%;
+    margin: 0;
+    width: 2rem;
+    height: 2rem;
+}
+
+footer:hover{
+    background-color: #E4DDCF;
+}
+
+footer:hover svg{
+    background-color: #E4DDCF;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo{
+    padding: 1rem;
+    width: 100vw;
+    border-bottom-style: solid;
+    position: fixed;
+    text-align: left;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.logo:hover{
+    background-color: #E4DDCF;
+}
